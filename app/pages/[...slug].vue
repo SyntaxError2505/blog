@@ -6,16 +6,12 @@ const { data: page } = await useAsyncData(route.path, () => {
 </script>
 
 <template>
-  <div>
-    <header><!-- ... --></header>
-
+  <div class="rendererParent">
     <ContentRenderer
       v-if="page"
       :value="page"
       class = "contentRenderer"
     />
-
-    <footer><!-- ... --></footer>
   </div>
 </template>
 
@@ -29,7 +25,24 @@ const { data: page } = await useAsyncData(route.path, () => {
 
 .contentRenderer {
   font-family: 'Departure Mono', monospace;
-  text-align: center;
   color: white;
+}
+
+.rendererParent {
+  max-width: 50%;
+  display: block;
+  margin: auto;
+}
+
+a {
+  color: white;
+}
+
+
+img {
+  max-width: 80%;
+  height: auto;
+  margin: auto;
+  display: block;
 }
 </style>
