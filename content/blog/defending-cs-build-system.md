@@ -2,7 +2,9 @@
 An opinion Piece on Make, Cmake, VS, Ninja, Meson and all the other Tools that keep C worthwhile
 ## How does it work
 Currently, it works like this:  
+
 ![Image showing compilation pipeline](/images/defending-cs-build-system/compiler.png)
+
 The programmer installs a bunch of libraries (this is going to be discussed in [Package Management](#package-management)), writes code, configures a generator like Meson or Cmake using their own programming language. The generator writes a file for a build system like Make or Ninja. Those just execute bash commands that utilise helper executables like pkgconfig and of course the main compiler which for most projects is still gcc. This might sound overcomplicated to programmers who use other lagnagues like Rust, Java Script or Python. They just go their languages official website, download an installer or copy a curl | sh command and have simple commands at hand to install libaries or build the project. A subset of C/C++ programmers that uses Visual Studio with the MSVC compiler also gets easy configuration in their IDE and can just run their code using a button. This article is about how the shown pipeline is faster, better and more fun than the standardised language tools like pip, cargo or npm.
 ## A better look at modern languages
 With modern languages, I mean everything that can have a NPM-like experience, not being modern by syntax or release date. Those fit two standards:  
