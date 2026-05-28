@@ -8,6 +8,6 @@
 
 <style>
 body {
-  background-color: black;
+  background-color: #282828;
 }
 </style>

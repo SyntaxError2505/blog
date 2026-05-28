@@ -6,7 +6,7 @@ title: Syntax's Site
 ## About me
 I am Sascha and am commonly known under the name SyntaxError2505 online. I love eating, programming and gaming in exactly that order and will mostly write about the second one in here.  
   
-![Picture of me with Teddy Bear](/photo.jpeg)
+![Picture of me with Teddy Bear](images/photo.jpeg)
 > thats me btw. I am pretty sure this is the first time I am showing my face.
 ## My Blog
 If you are here for it, please click this [link to the blog](/blog)

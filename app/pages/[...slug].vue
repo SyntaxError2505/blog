@@ -25,7 +25,7 @@ const { data: page } = await useAsyncData(route.path, () => {
 
 .contentRenderer {
   font-family: 'Departure Mono', monospace;
-  color: white;
+  color: #ebdbb2;
 }
 
 .rendererParent {
@@ -35,9 +35,12 @@ const { data: page } = await useAsyncData(route.path, () => {
 }
 
 a {
-  color: white;
+  color: #d65d0e;
 }
 
+h1 {
+    color: #b16286
+}
 
 img {
   max-width: 80%;
