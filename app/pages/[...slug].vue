@@ -29,9 +29,11 @@ const { data: page } = await useAsyncData(route.path, () => {
 }
 
 .rendererParent {
-  max-width: 50%;
   display: block;
   margin: auto;
+  @media (min-width:1000px){
+      max-width: 50%;
+  }
 }
 
 a {
